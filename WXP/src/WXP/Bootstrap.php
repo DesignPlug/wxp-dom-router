@@ -62,14 +62,14 @@ class Bootstrap {
      * dom-routes and scripts
      *************************************************/
     
-    static function init($path){
+    static function init(){
         
         /*********************************************
          * DOM ROUTING
          * - router calls methods based on body class
          *********************************************/
 
-        add_filter('template_include', function($default_template) use ($path){
+        add_filter('template_include', function($default_template){
 
             //add default values to view
             View::getInstance()->add("base_template", WXP::DS($default_template));
