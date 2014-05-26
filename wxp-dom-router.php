@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP Expressive Dom Router
 Plugin URI: http://www.designplug.net
-Description: Create Cleaner and Scalable views with WXP DomRouter. WXP DonRouter provides an organized way to handle your queries and other business logic, and make variables accessible in wordpress templates. Wordpress body classes provide a ton of information about the current page that WXP DomRouter allows Theme developers make use of for determining what content should be loaded on each page.
+Description: Create Cleaner and Scalable views with WXP DomRouter. WXP DomRouter provides an organized way to handle your queries and other business logic, and make variables accessible in wordpress templates. Wordpress body classes provide a ton of information about the current page that WXP DomRouter allows Theme developers make use of for determining what content should be loaded on each page.
 Version: 0.1.0
 Author: Ric Anthony Lee
 Author URI: http://www.facebook.com/theleecode
