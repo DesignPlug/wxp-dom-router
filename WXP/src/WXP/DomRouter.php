@@ -54,14 +54,14 @@ class DomRouter {
         $this->routes[$name][] = $callback;
     }
     
-    protected function callTarget($target, $param){
+    protected function callTarget($target){
 
         if(!is_callable($target)){
             $target = explode('#', trim($target));
             $target[0] = new $target[0];
         }
         
-        return call_user_func($target, $param);
+        return call_user_func($target);
     }
     
     

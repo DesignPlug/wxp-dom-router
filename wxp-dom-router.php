@@ -12,6 +12,7 @@ License: MIT
 use WXP\WXP;
 use WXP\Bootstrap;
 
+
 $ds = DIRECTORY_SEPARATOR;
 
 require 'WXP'.$ds.'src'.$ds.'WXP'.$ds.'WXP.php';
@@ -30,6 +31,5 @@ function view_var($var){
  *****************************************************/
 
 Bootstrap::init();
-
 
 ?>
