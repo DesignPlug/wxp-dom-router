@@ -70,15 +70,13 @@ WXP/Theme/Controllers/ControllerName.php
 
 Now finally get your variables from your wordpress template
 
-```html
+```php
 
-   <h1>```php <?php echo view_var("page_header"); ?> ```</h1>
-   <div> ```php <?php get_template_part(views\content, view_var("template_name")) ?>``` </div>
-   ```php
+   <h1><?php echo view_var("page_header"); ?></h1>
+   <div> <?php get_template_part(views\content, view_var("template_name")) ?> </div>
    <?php
         foreach(view_var("some_data"), as $data) ...
    ?>
-   ```
 
 
 ```
