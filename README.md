@@ -47,7 +47,9 @@ load data and pass it the view.
 
 WXP/Theme/Controllers/ControllerName.php
 
-```php namespace Theme\Controllers;
+```php 
+ 
+   namespace Theme\Controllers;
   
    class ControllerName extends WXP\Controller{
 
