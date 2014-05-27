@@ -42,8 +42,8 @@ WXP/Theme/config/dom-routes.php
 
 ```
 
-When the body has specified $body_class ControllerName::action will be called, which would
-load data and pass it the view.
+When the body has specified $body_class ControllerName::action will be called, which will
+load data and make it accessible the view.
 
 WXP/Theme/Controllers/ControllerName.php
 
@@ -70,12 +70,12 @@ WXP/Theme/Controllers/ControllerName.php
 
 ```
 
-Now finally get your variables from your wordpress template
+Now finally access your variables inside your wordpress template
 
 ```php
 
    <h1><?php echo view_var("page_header"); ?></h1>
-   <div> <?php get_template_part(views\content, view_var("template_name")) ?> </div>
+   <div><?php get_template_part(views\content, view_var("template_name")); ?> </div>
    <?php
         foreach(view_var("some_data"), as $data) ...
    ?>
@@ -83,6 +83,10 @@ Now finally get your variables from your wordpress template
 
 ```
 
+Voila, we can avoid handling things like queries, control structures and other more complex php code
+in templates (as is common with Wordpress themes) and create prettier and reusable templates! 
+
+visit our blog @ http://www.designplug.net/blog
 
 
 
