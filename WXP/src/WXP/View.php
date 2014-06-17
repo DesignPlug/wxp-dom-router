@@ -28,7 +28,7 @@ class View {
     }
     
     function get($name){
-        return @$this->data[$name];
+        return apply_filters("WXP.var.".$name, @$this->data[$name]);
     }
     
     
