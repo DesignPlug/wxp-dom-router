@@ -35,23 +35,23 @@ class Bootstrap {
         add_action('after_setup_theme', function() use($path){
 
             if(file_exists(WXP::DS($path ."\config\constants.php"))){
-                require locate_template(WXP::DS($path ."\config\constants.php"));
+                require WXP::DS($path ."\config\constants.php");
             }
             
             if(file_exists(WXP::DS($path ."\config\init.php"))){
-                require locate_template(WXP::DS($path ."\config\init.php"));
+                require WXP::DS($path ."\config\init.php");
             }
             
             //load scripts if exist
 
             if(file_exists(WXP::DS($path ."\config\scripts.php"))){
-                require locate_template(WXP::DS($path ."\config\scripts.php"));
+                require WXP::DS($path ."\config\scripts.php");
             }
             
             //load dom routes if exist
             
             if(file_exists(WXP::DS($path ."\config\dom-routes.php"))){
-                require locate_template(WXP::DS($path ."\config\dom-routes.php"));
+                require WXP::DS($path ."\config\dom-routes.php");
             }
         });
     }
